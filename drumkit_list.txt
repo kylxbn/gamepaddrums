@@ -1,0 +1,11 @@
+5
+drum_samples\gretsch.txt
+Gretsch
+drum_samples\ayotte.txt
+Ayotte
+drum_samples\ludwig.txt
+Dunnett/Ludwig
+drum_samples\ayotte2.txt
+Ayotte2
+drum_samples\casserole.txt
+Casserole
