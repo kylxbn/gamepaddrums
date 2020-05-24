@@ -1,5 +1,5 @@
-#include <SDL.h>
-#include <SDL_mixer.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_mixer.h>
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -88,19 +88,9 @@ bool init()
 	{
 	    SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "SDL Init Error", SDL_GetError(), NULL);
 		return false;
+	} else {
+		cout << "Done.\n";
 	}
-
-	window = SDL_CreateWindow("GamepadDrums 5.0", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN );
-	if (window = NULL)
-    {
-	    SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Create Window Error", SDL_GetError(), NULL);
-		return false;
-	}
-	surface = SDL_GetWindowSurface(window);
-	SDL_FillRect( surface, NULL, SDL_MapRGB( screenSurface->format, 0x0, 0x0, 0x0 ) );
-	SDL_UpdateWindowSurface( window );
-
-	else cout << "Done.\n";
 	cout << "Initializing SDL audio mixer... ";
 	if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024) < 0)
 	{
