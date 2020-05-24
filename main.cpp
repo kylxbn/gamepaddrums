@@ -620,7 +620,7 @@ void MainLoop()
 						lcu = false;
 					}
 				}
-				else if (e.jaxis.axis == 2 || e.jaxis.axis == 3)
+				else if (e.jaxis.axis == 2)
 				{
 					// right left-right
 					if (e.jaxis.value <= minv)
@@ -639,7 +639,7 @@ void MainLoop()
 						rcl = false;
 					}
 				}
-				else if (e.jaxis.axis == 4)
+				else if (e.jaxis.axis == 3)
 				{
 					// right up-down
 					if (e.jaxis.value <= minv)
